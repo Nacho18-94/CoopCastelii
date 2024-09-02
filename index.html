@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alto Verde Castelli</title>
+  <link rel="icon" href="imgicon.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/65dab4f643.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegación-->
+    <div class="navbar">
+      <ul class="links">
+        <li><a href="#inicio">Home</a></li>
+        <li>
+          <a href="ACSPRAVC-RESEÑA-2023.pdf" target="_blank">Sobre Nosotros</a>
+        </li>
+        <li><a href="#contacto">Contactos</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!--Menú despegable-->
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li>
+          <a href="ACSPRAVC-RESEÑA-2023.pdf" target="_blank">Sobre Nosotros</a>
+        </li>
+        <li><a href="#contacto">Contactos</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <picture>
+      <img src="image.png" alt="" />
+    </picture>
+    <!--Botones-->
+    <section class="container" id="inicio">
+      <div class="grid-container">
+        <div class="grid-item" id="btn-video">
+          <a href="#" class="fuente">
+            <i class="fa-solid fa-microchip"></i><br />
+            <h4>IA</h4>
+          </a>
+        </div>
+        <div class="grid-item" id="btn-img2">
+          <a href="#" class="fuente">
+            <i class="fa-solid fa-money-bill"></i><br />
+            <h4>MEDIOS DE PAGO</h4>
+          </a>
+        </div>
+        <div class="grid-item" id="btn-img">
+          <a href="#" class="fuente">
+            <i class="fa-regular fa-file"></i><br />
+            <h4>TARIFAS VIGENTES</h4>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="solicitudes.html" target="_blank" class="fuente">
+            <i class="fa-solid fa-person-circle-question"></i><br />
+            <h4>SOLICITUDES</h4>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="denuncias.html" target="_blank" class="fuente">
+            <i class="fa-solid fa-shield-halved"></i><br />
+            <h4>DENUNCIA ANÓNIMA DE CONEXIÓN CLANDESTINA</h4>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="#" class="fuente">
+            <i class="fa-solid fa-wifi"></i><br />
+            <h4>SERVICIO DE INTERNET</h4>
+          </a>
+        </div>
+      </div>
+      <!--Modal de imágenes-->
+      <div id="ctn-cover-img">
+        <div class="ctn-img">
+          <div id="cerrar-img">
+            <i class="fa-solid fa-xmark" id="btn-cerrar"></i>
+          </div>
+          <img src="tarifas.jpeg" alt="" class="imagen" />
+        </div>
+      </div>
+      <div id="ctn-cover-img2">
+        <div class="ctn-img">
+          <div id="cerrar-img2">
+            <i class="fa-solid fa-xmark" id="btn-cerrar"></i>
+          </div>
+          <img src="formasDePago.png" alt="" class="imagen" />
+        </div>
+      </div>
+      <!-- Modal de video -->
+      <div id="videoModal" class="modal">
+        <div class="modal-contenedor">
+          <div id="cerrar-video-modal" class="closeBtn">
+          </div>
+          <video controls>
+            <source src="VID-20221123-WA0016.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!--Pie de página-->
+  <footer class="footer" id="contacto">
+    <h3>CONTACTOS</h3>
+    <ul class="social-icon">
+      <li class="icon-elem">
+        <a href="https://api.whatsapp.com/send?phone=2635039313" class="icon">Emergencias técnicas: 2635039313
+          <i class="fa-brands fa-whatsapp"></i></a>
+      </li>
+      <li class="icon-elem">
+        <a href="https://api.whatsapp.com/send?phone=5492634202522" class="icon">Contactos comerciales: 2634202522
+          <i class="fa-brands fa-whatsapp"></i></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitudes</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="form" action="https://formspree.io/f/mrbzgkne" method="POST">
+      <h2 class="form_title">Contáctanos</h2>
+      <div class="ratios">
+        <p class="input_title">Solicitudes:</p>
+        <div>
+          <input
+            type="radio"
+            class="form_ratio"
+            name="Solicitud:"
+            value="Solicitud de factura"
+            id="solicitud-factura"
+            checked
+          />
+          <label for="solicitud-factura">Solicitud de factura</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            class="form_ratio"
+            name="Solicitud:"
+            value="Solicitud de deuda"
+            id="solicitud-deuda"
+          />
+          <label for="solicitud-deuda">Solicitud de deuda</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            class="form_ratio"
+            name="Solicitud:"
+            value="Nuevos suministros"
+            id="nuevos-suministros"
+          />
+          <label for="nuevos-suministros">Nuevos suministros</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            class="form_ratio"
+            name="Solicitud:"
+            value="Otros"
+            id="otros"
+          />
+          <label for="otros">Otros</label>
+        </div>
+      </div>
+      <div class="form_container">
+        <input
+          type="text"
+          class="form_input"
+          placeholder="Titular del servicio:"
+          name="Titular del Servicio:"
+          required
+        />
+        <input
+          type="number"
+          class="form_input"
+          placeholder="Número de WhatsApp:"
+          name="Número de WhatsApp:"
+          required
+        />
+        <textarea
+          class="form_input form_input--message"
+          placeholder="Mensaje:"
+          name="Mensaje:"
+        ></textarea>
+        <input type="submit" value="Enviar" class="form_cta" />
+      </div>
+    </form>
+  </body>
+</html>
